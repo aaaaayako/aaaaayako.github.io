@@ -1,0 +1,165 @@
+.pianokey {
+    border: 1px solid #999;
+    cursor: pointer;
+    display: inline-block;
+    height: 200px;
+    width: calc(100% / 8 - 2px);
+    width: -webkit-calc(100% / 8 - 2px);
+}
+ 
+.sharp {
+    background-color: black;
+    height: 120px;
+    margin-left: -4%;
+    position: absolute;
+    width: 8%;
+}
+ 
+#piano {
+    margin: 50px auto;
+    max-width: 420px;
+    position: relative;
+}
+
+#play {
+    background-color: #fff;
+}
+
+#kuma {
+    background: url(../images/town.jpg) center bottom no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.btn {
+display: inline-block;
+text-decoration: none;
+background: #87befd;
+color: #FFF;
+width: 120px;
+height: 120px;
+line-height: 120px;
+border-radius: 50%;
+text-align: center;
+vertical-align: middle;
+overflow: hidden;
+transition: .4s;
+}.btn:hover{
+background: #668ad8;
+}
+
+/* --------------- nav ----------------- */
+.list-nav{
+  width:980px;
+  margin:0 auto;
+  display:table;
+}
+.list-nav li{
+  display:table-cell;
+  vertical-align:middle;
+}
+.list-nav .active a{
+  background:#999;
+ }
+.list-nav a{
+  height:70px;
+  width:400px;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  background:#ABCDCB;
+  color:#fff;
+  border-right:1px solid #fff;
+  text-decoration: none;
+ }
+.list-nav li:first-child a{
+  border-left:1px solid #fff;
+}
+.list-nav li a:hover{
+  background:#999;
+}
+/* --------- sp ----------- */
+@media screen and (max-width: 768px){
+.list-nav{
+  width:100%;
+  margin:0 auto;
+  display:block;
+}
+.list-nav li{
+  display:table;
+  width:100%;
+}
+.list-nav .active a{
+  background:#999;
+ }
+.list-nav a{
+  height:70px;
+  width:100%;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  background:#ABCDCB;
+  color:#fff;
+  border-right:none;
+  border-bottom:solid 1px #fff;
+}
+.list-nav li:first-child a{
+  border-left:none;
+  border-top:solid 1px #fff;
+}
+.list-nav li a:hover{
+  background:#999;
+}
+
+/* ----------- insta button ------------- */
+.insta_btn3 {/*ボタンの下地*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 14px;/*角丸に*/
+  position: relative;
+  display: block;
+  height: 120px;/*高さ*/
+  width: 120px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  padding-top: 12px;/*上側との余白*/
+  box-sizing: border-box;
+  font-size: 19px;/*文字のサイズ*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+
+.insta_btn3:before{/*グラデーション②*/
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;/*全体を覆う*/
+  height: 100%;/*全体を覆う*/
+  background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+
+.insta_btn3 div {
+  position: relative;
+}
+
+.insta_btn3 .fa-instagram {
+    font-size: 70px;/*アイコンサイズ*/
+    position: relative;
+    display:inline-block;
+    position: relative;
+    transition: .5s
+}
+
+.insta_btn3 .fa-instagram:hover {/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
